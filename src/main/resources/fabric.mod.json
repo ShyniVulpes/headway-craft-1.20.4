@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "headwaycraft",
+	"version": "${version}",
+	"name": "Headway Craft",
+	"description": "Made by ShyniVulpes! :)",
+	"authors": [
+		"shynivulpes!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/headwaycraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shynivulpes.headwaycraft.HeadwayCraft"
+		],
+		"client": [
+			"net.shynivulpes.headwaycraft.HeadwayCraftClient"
+		],
+		"fabric-datagen": [
+			"net.shynivulpes.headwaycraft.HeadwayCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"headwaycraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
